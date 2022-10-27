@@ -1,4 +1,4 @@
-package com.example.rest.conrtoller;
+package com.example.rest.conrtroller;
 
 import java.util.List;
 
@@ -18,6 +18,7 @@ import com.example.rest.dto.PatientDTO;
 import com.example.service.PatientService;
 
 import lombok.AllArgsConstructor;
+
 @RestController
 @AllArgsConstructor
 public class PatientController {
@@ -34,18 +35,18 @@ public class PatientController {
 		return service.getAllPatients();	
 	}
 	
-	@PutMapping("/updatePatient/{id}")
+	@PutMapping("/updatePatient/{nhsNo}")
 	public PatientDTO updatePatient(@PathVariable Long id, @RequestBody Patient patient) {
 		return service.updatePatient(id, patient);
 	}
 
-	@DeleteMapping("/DeletePatient/{id}")
+	@DeleteMapping("/DeletePatient/{nhsNo}")
 	public boolean deletePatient(@PathVariable Long id) {
 		return service.deletePatient(id);
 	}
 	
 	@GetMapping("/patientById")
-	public PatientDTO readPatientById(@PathParam("id") Long id) {
+	public PatientDTO readPatientById(@PathParam("nhsNo") Long id) {
 		return service.readById(id);
 	}
 	
@@ -54,5 +55,7 @@ public class PatientController {
 		return service.readByName(name);
 	}
 	
+
+
 
 }

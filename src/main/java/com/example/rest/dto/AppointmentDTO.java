@@ -3,42 +3,48 @@ package com.example.rest.dto;
 import com.example.persistence.domain.Patient;
 
 public class AppointmentDTO {
-	private Long id;
-	private String name;
-	private String department;
-	private int appointmentDate;
-	private int time;
+	private Long nhsNo;
+	private String appointmentNo;
+	private String doctorName;
+	private String doctorDepartment;
+	private String appointmentDate;
+	private String appointmentTime;
 	private Patient patient;
-	public Long getNHSNo() {
-		return id;
+	public Long getNhsNo() {
+		return nhsNo;
 	}
-	public void setNHSNo(Long nHSNo) {
-		id = nHSNo;
+	public void setNhsNo(Long nhsNo) {
+		this.nhsNo = nhsNo;
 	}
-	
-	public String getName() {
-		return name;
+	public String getAppointmentNo() {
+		return appointmentNo;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setAppointmentNo(String appointmentNo) {
+		this.appointmentNo = appointmentNo;
 	}
-	public String getDepartment() {
-		return department;
+	public String getDoctorName() {
+		return doctorName;
 	}
-	public void setDepartment(String department) {
-		this.department = department;
+	public void setDoctorName(String doctorName) {
+		this.doctorName = doctorName;
 	}
-	public int getAppointmentDate() {
+	public String getDoctorDepartment() {
+		return doctorDepartment;
+	}
+	public void setDoctorDepartment(String doctorDepartment) {
+		this.doctorDepartment = doctorDepartment;
+	}
+	public String getAppointmentDate() {
 		return appointmentDate;
 	}
-	public void setAppointmentDate(int appointmentDate) {
+	public void setAppointmentDate(String appointmentDate) {
 		this.appointmentDate = appointmentDate;
 	}
-	public int getTime() {
-		return time;
+	public String getAppointmentTime() {
+		return appointmentTime;
 	}
-	public void setTime(int time) {
-		this.time = time;
+	public void setAppointmentTime(String appointmentTime) {
+		this.appointmentTime = appointmentTime;
 	}
 	public Patient getPatient() {
 		return patient;
@@ -46,14 +52,15 @@ public class AppointmentDTO {
 	public void setPatient(Patient patient) {
 		this.patient = patient;
 	}
-	public AppointmentDTO(Long nHSNo, Long appointmentNo, String name, String department, int appointmentDate, int time,
-			Patient patient) {
+	public AppointmentDTO(Long nhsNo, String appointmentNo, String doctorName, String doctorDepartment,
+			String appointmentDate, String appointmentTime, Patient patient) {
 		super();
-		id = id;
-		this.name = name;
-		this.department = department;
+		this.nhsNo = nhsNo;
+		this.appointmentNo = appointmentNo;
+		this.doctorName = doctorName;
+		this.doctorDepartment = doctorDepartment;
 		this.appointmentDate = appointmentDate;
-		this.time = time;
+		this.appointmentTime = appointmentTime;
 		this.patient = patient;
 	}
 	public AppointmentDTO() {
@@ -62,10 +69,9 @@ public class AppointmentDTO {
 	}
 	@Override
 	public String toString() {
-		return "AppointmentDTO [NHSNo=" + id + ", appointmentNo=" + ", name=" + name
-				+ ", department=" + department + ", appointmentDate=" + appointmentDate + ", time=" + time
-				+ ", patient=" + patient + "]";
+		return "AppointmentDTO [nhsNo=" + nhsNo + ", appointmentNo=" + appointmentNo + ", doctorName=" + doctorName
+				+ ", doctorDepartment=" + doctorDepartment + ", appointmentDate=" + appointmentDate
+				+ ", appointmentTime=" + appointmentTime + ", patient=" + patient + "]";
 	}
-	
 
 }

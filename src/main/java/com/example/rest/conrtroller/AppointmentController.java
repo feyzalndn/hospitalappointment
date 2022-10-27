@@ -1,4 +1,4 @@
-package com.example.rest.conrtoller;
+package com.example.rest.conrtroller;
 
 import java.util.List;
 
@@ -55,5 +55,7 @@ public class AppointmentController {
 	public List<AppointmentDTO> readAppointmentByName(@PathParam("name") String name) {
 		return service.readByName(name);
 	}
-}
 
+	
+
+}

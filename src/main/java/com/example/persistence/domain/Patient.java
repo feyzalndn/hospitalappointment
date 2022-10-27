@@ -20,13 +20,14 @@ public class Patient {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	private String name;
-	private String dateOfBirth;
-	private int age;
-	private Long phone;
-	private String email;
-	private String address;
+	private Long appointmentNo;
+	private Long nhsNo;
+	private String patientName;
+	private String patientDateOfBirth;
+	private Integer patientAge;
+	private Integer patientPhone;
+	private String patientEmail;
+	private String patientAddress;
 	
 	@OneToMany(mappedBy = "patient", fetch = FetchType.EAGER)
 	@OnDelete(action = OnDeleteAction.CASCADE)
@@ -35,80 +36,17 @@ public class Patient {
 	@JsonIgnore
 	private List<Appointment> appointments = new ArrayList<>();
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getDateOfBirth() {
-		return dateOfBirth;
-	}
-
-	public void setDateOfBirth(String dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public Long getPhone() {
-		return phone;
-	}
-
-	public void setPhone(Long phone) {
-		this.phone = phone;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public List<Appointment> getAppointments() {
-		return appointments;
-	}
-
-	public void setAppointments(List<Appointment> appointments) {
-		this.appointments = appointments;
-	}
-
-	public Patient(Long id, String name, String dateOfBirth, int age, Long phone, String email, String address,
-			List<Appointment> appointments) {
+	public Patient(Long appointmentNo, Long nhsNo, String patientName, String patientDateOfBirth, Integer patientAge,
+			Integer patientPhone, String patientEmail, String patientAddress, List<Appointment> appointments) {
 		super();
-		this.id = id;
-		this.name = name;
-		this.dateOfBirth = dateOfBirth;
-		this.age = age;
-		this.phone = phone;
-		this.email = email;
-		this.address = address;
+		this.appointmentNo = appointmentNo;
+		this.nhsNo = nhsNo;
+		this.patientName = patientName;
+		this.patientDateOfBirth = patientDateOfBirth;
+		this.patientAge = patientAge;
+		this.patientPhone = patientPhone;
+		this.patientEmail = patientEmail;
+		this.patientAddress = patientAddress;
 		this.appointments = appointments;
 	}
 
@@ -119,10 +57,82 @@ public class Patient {
 
 	@Override
 	public String toString() {
-		return "Patient [id=" + id + ", name=" + name + ", age=" + age + ", phone=" + phone + ", email=" + email
-				+ ", address=" + address + ", appointments=" + appointments + "]";
+		return "Patient [appointmentNo=" + appointmentNo + ", nhsNo=" + nhsNo + ", patientName=" + patientName
+				+ ", patientDateOfBirth=" + patientDateOfBirth + ", patientAge=" + patientAge + ", patientPhone="
+				+ patientPhone + ", patientEmail=" + patientEmail + ", patientAddress=" + patientAddress
+				+ ", appointments=" + appointments + "]";
 	}
 
-	
+	public Long getAppointmentNo() {
+		return appointmentNo;
+	}
+
+	public void setAppointmentNo(Long appointmentNo) {
+		this.appointmentNo = appointmentNo;
+	}
+
+	public Long getNhsNo() {
+		return nhsNo;
+	}
+
+	public void setNhsNo(Long nhsNo) {
+		this.nhsNo = nhsNo;
+	}
+
+	public String getPatientName() {
+		return patientName;
+	}
+
+	public void setPatientName(String patientName) {
+		this.patientName = patientName;
+	}
+
+	public String getPatientDateOfBirth() {
+		return patientDateOfBirth;
+	}
+
+	public void setPatientDateOfBirth(String patientDateOfBirth) {
+		this.patientDateOfBirth = patientDateOfBirth;
+	}
+
+	public Integer getPatientAge() {
+		return patientAge;
+	}
+
+	public void setPatientAge(Integer patientAge) {
+		this.patientAge = patientAge;
+	}
+
+	public Integer getPatientPhone() {
+		return patientPhone;
+	}
+
+	public void setPatientPhone(Integer patientPhone) {
+		this.patientPhone = patientPhone;
+	}
+
+	public String getPatientEmail() {
+		return patientEmail;
+	}
+
+	public void setPatientEmail(String patientEmail) {
+		this.patientEmail = patientEmail;
+	}
+
+	public String getPatientAddress() {
+		return patientAddress;
+	}
+
+	public void setPatientAddress(String patientAddress) {
+		this.patientAddress = patientAddress;
+	}
+
+	public List<Appointment> getAppointments() {
+		return appointments;
+	}
+
+	public void setAppointments(List<Appointment> appointments) {
+		this.appointments = appointments;
+	}
 
 }

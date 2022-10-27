@@ -20,6 +20,7 @@ import lombok.Data;
 @AllArgsConstructor
 @Data
 public class AppointmentService {
+	
 	@Autowired
 	private AppointmentRepository repo;
 	@Autowired
@@ -37,32 +38,34 @@ public class AppointmentService {
 		return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
 		
 	}
-	public AppointmentDTO updateAppointment(Long id, Appointment appointment) {
-		Optional<Appointment> tempAppointment = Optional.of(this.repo.findById(id).orElseThrow(AppointmentNotFoundException::new));
+	public AppointmentDTO updateAppointment(Long nhsNo, Appointment appointment) {
+		Optional<Appointment> tempAppointment = Optional.of(this.repo.findById(nhsNo).orElseThrow(AppointmentNotFoundException::new));
 		Appointment existing =tempAppointment.get();
 		
-		existing.setId(appointment.getId());
-		existing.setName(appointment.getName());
-		existing.setDepartment(appointment.getDepartment());
+		existing.setDoctorName(appointment.getDoctorName());
+		existing.setDoctorDepartment(appointment.getDoctorDepartment());
 		existing.setAppointmentDate(appointment.getAppointmentDate());
-		existing.setTime(appointment.getTime());
+		existing.setAppointmentTime(appointment.getAppointmentTime());
 		
 		Appointment updated= this.repo.save(existing);
 		return this.mapToDTO(updated);
 	}
 	
-	public boolean deleteAppointment(Long id) {
-		this.repo.findById(id).orElseThrow(AppointmentNotFoundException::new);
-		this.repo.deleteById(id);
-		boolean exists = this.repo.existsById(id);
+	public boolean deleteAppointment(Long nhsNo) {
+		this.repo.findById(nhsNo).orElseThrow(AppointmentNotFoundException::new);
+		this.repo.deleteById(nhsNo);
+		boolean exists = this.repo.existsById(nhsNo);
 		return !exists;
 	}
-	public AppointmentDTO readById(Long id) {
-		Appointment found = this.repo.findById(id).orElseThrow(AppointmentNotFoundException::new);
+	public AppointmentDTO readById(Long nhsNo) {
+		Appointment found = this.repo.findById(nhsNo).orElseThrow(AppointmentNotFoundException::new);
 		return this.mapToDTO(found);
 	}
-	public List<AppointmentDTO> readByName(String name) {
-		List<Appointment> found = this.repo.appointmentByName(name).orElseThrow(AppointmentNotFoundException::new);
+	public List<AppointmentDTO> readByName(String doctorName) {
+		List<Appointment> found = this.repo.appointmentByName(doctorName).orElseThrow(AppointmentNotFoundException::new);
 		return found.stream().map(this::mapToDTO).collect(Collectors.toList());
 	}
+
+	
+
 }

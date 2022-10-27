@@ -6,79 +6,33 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Appointment {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	
+	private Long appointmentNo;
 	@NotNull
-	private String name;
+	@Size(min = 0, max = 55)
+	private String doctorName;
 	@NotNull
-	private String department;
+	private String doctorDepartment;
 	private String appointmentDate;
-	private String time;
+	private String appointmentTime;
 	
 	@ManyToOne
 	private Patient patient;
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getDepartment() {
-		return department;
-	}
-
-	public void setDepartment(String department) {
-		this.department = department;
-	}
-
-	public String getAppointmentDate() {
-		return appointmentDate;
-	}
-
-	public void setAppointmentDate(String appointmentDate) {
-		this.appointmentDate = appointmentDate;
-	}
-
-	public String getTime() {
-		return time;
-	}
-
-	public void setTime(String time) {
-		this.time = time;
-	}
-
-	public Patient getPatient() {
-		return patient;
-	}
-
-	public void setPatient(Patient patient) {
-		this.patient = patient;
-	}
-
-	public Appointment(Long id, @NotNull String name, @NotNull String department, String appointmentDate, String time,
-			Patient patient) {
+	public Appointment(Long appointmentNo, @NotNull @Size(min = 0, max = 55) String doctorName,
+			@NotNull String doctorDepartment, String appointmentDate, String appointmentTime, Patient patient) {
 		super();
-		this.id = id;
-		this.name = name;
-		this.department = department;
+		this.appointmentNo = appointmentNo;
+		this.doctorName = doctorName;
+		this.doctorDepartment = doctorDepartment;
 		this.appointmentDate = appointmentDate;
-		this.time = time;
+		this.appointmentTime = appointmentTime;
 		this.patient = patient;
 	}
 
@@ -89,12 +43,57 @@ public class Appointment {
 
 	@Override
 	public String toString() {
-		return "Appointment [id=" + id + ", name=" + name + ", department=" + department + ", appointmentDate="
-				+ appointmentDate + ", time=" + time + ", patient=" + patient + "]";
+		return "Appointment [appointmentNo=" + appointmentNo + ", doctorName=" + doctorName + ", doctorDepartment="
+				+ doctorDepartment + ", appointmentDate=" + appointmentDate + ", appointmentTime=" + appointmentTime
+				+ ", patient=" + patient + "]";
 	}
 
-	
-	
-	
-	
+	public Long getAppointmentNo() {
+		return appointmentNo;
+	}
+
+	public void setAppointmentNo(Long appointmentNo) {
+		this.appointmentNo = appointmentNo;
+	}
+
+	public String getDoctorName() {
+		return doctorName;
+	}
+
+	public void setDoctorName(String doctorName) {
+		this.doctorName = doctorName;
+	}
+
+	public String getDoctorDepartment() {
+		return doctorDepartment;
+	}
+
+	public void setDoctorDepartment(String doctorDepartment) {
+		this.doctorDepartment = doctorDepartment;
+	}
+
+	public String getAppointmentDate() {
+		return appointmentDate;
+	}
+
+	public void setAppointmentDate(String appointmentDate) {
+		this.appointmentDate = appointmentDate;
+	}
+
+	public String getAppointmentTime() {
+		return appointmentTime;
+	}
+
+	public void setAppointmentTime(String appointmentTime) {
+		this.appointmentTime = appointmentTime;
+	}
+
+	public Patient getPatient() {
+		return patient;
+	}
+
+	public void setPatient(Patient patient) {
+		this.patient = patient;
+	}
+
 }

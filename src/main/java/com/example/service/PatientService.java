@@ -1,7 +1,6 @@
 package com.example.service;
 
 import java.util.List;
-
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -35,30 +34,30 @@ public class PatientService {
 	public List<PatientDTO> getAllPatients() {
 		return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
 	}
-		public PatientDTO updatePatient(Long id, Patient patient) {
-		Optional<Patient> tempPatient = Optional.of(this.repo.findById(id).orElseThrow(PatientNotFoundException::new));
+		public PatientDTO updatePatient(Long nhsNo, Patient patient) {
+		Optional<Patient> tempPatient = Optional.of(this.repo.findById(nhsNo).orElseThrow(PatientNotFoundException::new));
 		
 		Patient existing =tempPatient.get();
-		existing.setId(patient.getId());
-		existing.setName(patient.getName());
-		existing.setDateOfBirth(patient.getDateOfBirth());
-		existing.setAge(patient.getAge());
-		existing.setPhone(patient.getPhone());
-		existing.setEmail(patient.getEmail());
-		existing.setAddress(patient.getAddress());
+		existing.setNhsNo(patient.getNhsNo());
+		existing.setPatientName(patient.getPatientName());
+		existing.setPatientDateOfBirth(patient.getPatientDateOfBirth());
+		existing.setPatientAge(patient.getPatientAge());
+		existing.setPatientPhone(patient.getPatientPhone());
+		existing.setPatientEmail(patient.getPatientEmail());
+		existing.setPatientAddress(patient.getPatientAddress());
 		existing.setAppointments(patient.getAppointments());
 		
 		Patient updated = this.repo.save(existing);
 		return this.mapToDTO(updated);
 	}
-		public boolean deletePatient(Long id) {
-			this.repo.findById(id).orElseThrow(PatientNotFoundException::new);
-			this.repo.deleteById(id);
-			boolean exists = this.repo.existsById(id);
+		public boolean deletePatient(Long nhsNo) {
+			this.repo.findById(nhsNo).orElseThrow(PatientNotFoundException::new);
+			this.repo.deleteById(nhsNo);
+			boolean exists = this.repo.existsById(nhsNo);
 			return !exists;
 		}
-		public PatientDTO readById(Long id) {
-			Patient found = this.repo.findById(id).orElseThrow(PatientNotFoundException::new);
+		public PatientDTO readById(Long nhsNo) {
+			Patient found = this.repo.findById(nhsNo).orElseThrow(PatientNotFoundException::new);
 			return this.mapToDTO(found);
 		}
 		
@@ -67,5 +66,6 @@ public class PatientService {
 			return this.mapToDTO(found);
 			
 		}
-	
+
+
 }

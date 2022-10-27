@@ -10,9 +10,9 @@ import org.springframework.stereotype.Repository;
 import com.example.persistence.domain.Appointment;
 
 @Repository
-public interface AppointmentRepository extends JpaRepository<Appointment, Long>{
-	
-	@Query("select a from Appointment a where a.name=?1")
-	Optional<List<Appointment>> appointmentByName(String name);
+public interface AppointmentRepository  extends JpaRepository<Appointment, Long>{
+
+	@Query("select a from Appointment a where a.doctorName=?1")
+	Optional<List<Appointment>> appointmentByName(String doctorName);
 
 }
