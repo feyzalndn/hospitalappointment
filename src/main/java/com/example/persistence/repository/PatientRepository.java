@@ -11,7 +11,7 @@ import com.example.persistence.domain.Patient;
 @Repository
 public interface PatientRepository extends JpaRepository<Patient, Long>{
 	
-	@Query("select p from Patient p where p.nhsNo=?1")
-	Optional<Patient> patientByName(String nhsNo);
+	@Query("select p from Patient p where p.patientName=?1")
+	Optional<Patient> patientByName(String patientName);
 
 }

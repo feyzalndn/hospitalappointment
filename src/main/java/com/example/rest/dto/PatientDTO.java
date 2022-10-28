@@ -2,10 +2,11 @@ package com.example.rest.dto;
 
 import java.util.ArrayList;
 
+
 import java.util.List;
 
 import com.example.persistence.domain.Appointment;
-import com.example.persistence.domain.Patient;
+//import com.example.persistence.domain.Patient;
 //@NoArgsConstructor
 //@AllArgsConstructor
 //@Data

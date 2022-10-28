@@ -52,7 +52,7 @@ public class AppointmentController {
 	}
 	
 	@GetMapping("/appointmentByName")
-	public List<AppointmentDTO> readAppointmentByName(@PathParam("name") String doctorName) {
+	public List<AppointmentDTO> readAppointmentByName(@PathParam("doctorName") String doctorName) {
 		return service.readByName(doctorName);
 	}
 

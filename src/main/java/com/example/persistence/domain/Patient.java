@@ -20,8 +20,8 @@ public class Patient {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long appointmentNo;
-	private Long nhsNo;
+	private Long appointmentNo; //it should be not here
+	private Long nhsNo; //primary key
 	private String patientName;
 	private String patientDateOfBirth;
 	private Integer patientAge;
