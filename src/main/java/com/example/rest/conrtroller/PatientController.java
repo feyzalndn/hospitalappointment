@@ -35,24 +35,24 @@ public class PatientController {
 		return service.getAllPatients();	
 	}
 	
-	@PutMapping("/updatePatient/{nhsNo}")
-	public PatientDTO updatePatient(@PathVariable Long id, @RequestBody Patient patient) {
-		return service.updatePatient(id, patient);
+	@PutMapping("/updatePatient/{appointmentNo}")
+	public PatientDTO updatePatient(@PathVariable Long appointmentNo, @RequestBody Patient patient) {
+		return service.updatePatient(appointmentNo, patient);
 	}
 
-	@DeleteMapping("/DeletePatient/{nhsNo}")
-	public boolean deletePatient(@PathVariable Long id) {
-		return service.deletePatient(id);
+	@DeleteMapping("/DeletePatient/{appointmentNo}")
+	public boolean deletePatient(@PathVariable Long appointmentNo) {
+		return service.deletePatient(appointmentNo);
 	}
 	
 	@GetMapping("/patientById")
-	public PatientDTO readPatientById(@PathParam("nhsNo") Long id) {
-		return service.readById(id);
+	public PatientDTO readPatientById(@PathParam("appointmentNo") Long appointmentNo) {
+		return service.readById(appointmentNo);
 	}
 	
 	@GetMapping("/patientByName")
-	public PatientDTO readByName(@PathParam("name") String name) {
-		return service.readByName(name);
+	public PatientDTO readByName(@PathParam("patientName") String patientName) {
+		return service.readByName(patientName);
 	}
 	
 

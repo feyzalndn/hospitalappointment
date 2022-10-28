@@ -38,8 +38,8 @@ public class AppointmentService {
 		return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
 		
 	}
-	public AppointmentDTO updateAppointment(Long nhsNo, Appointment appointment) {
-		Optional<Appointment> tempAppointment = Optional.of(this.repo.findById(nhsNo).orElseThrow(AppointmentNotFoundException::new));
+	public AppointmentDTO updateAppointment(Long appointmentNo, Appointment appointment) {
+		Optional<Appointment> tempAppointment = Optional.of(this.repo.findById(appointmentNo).orElseThrow(AppointmentNotFoundException::new));
 		Appointment existing =tempAppointment.get();
 		
 		existing.setDoctorName(appointment.getDoctorName());
@@ -51,14 +51,14 @@ public class AppointmentService {
 		return this.mapToDTO(updated);
 	}
 	
-	public boolean deleteAppointment(Long nhsNo) {
-		this.repo.findById(nhsNo).orElseThrow(AppointmentNotFoundException::new);
-		this.repo.deleteById(nhsNo);
-		boolean exists = this.repo.existsById(nhsNo);
+	public boolean deleteAppointment(Long appointmentNo) {
+		this.repo.findById(appointmentNo).orElseThrow(AppointmentNotFoundException::new);
+		this.repo.deleteById(appointmentNo);
+		boolean exists = this.repo.existsById(appointmentNo);
 		return !exists;
 	}
-	public AppointmentDTO readById(Long nhsNo) {
-		Appointment found = this.repo.findById(nhsNo).orElseThrow(AppointmentNotFoundException::new);
+	public AppointmentDTO readById(Long appointmentNo) {
+		Appointment found = this.repo.findById(appointmentNo).orElseThrow(AppointmentNotFoundException::new);
 		return this.mapToDTO(found);
 	}
 	public List<AppointmentDTO> readByName(String doctorName) {

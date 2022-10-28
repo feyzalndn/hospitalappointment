@@ -25,7 +25,7 @@ public class Patient {
 	private String patientName;
 	private String patientDateOfBirth;
 	private Integer patientAge;
-	private Integer patientPhone;
+	private Long patientPhone;
 	private String patientEmail;
 	private String patientAddress;
 	
@@ -37,7 +37,7 @@ public class Patient {
 	private List<Appointment> appointments = new ArrayList<>();
 
 	public Patient(Long appointmentNo, Long nhsNo, String patientName, String patientDateOfBirth, Integer patientAge,
-			Integer patientPhone, String patientEmail, String patientAddress, List<Appointment> appointments) {
+			Long patientPhone, String patientEmail, String patientAddress, List<Appointment> appointments) {
 		super();
 		this.appointmentNo = appointmentNo;
 		this.nhsNo = nhsNo;
@@ -103,11 +103,11 @@ public class Patient {
 		this.patientAge = patientAge;
 	}
 
-	public Integer getPatientPhone() {
+	public Long getPatientPhone() {
 		return patientPhone;
 	}
 
-	public void setPatientPhone(Integer patientPhone) {
+	public void setPatientPhone(Long patientPhone) {
 		this.patientPhone = patientPhone;
 	}
 
@@ -135,4 +135,5 @@ public class Patient {
 		this.appointments = appointments;
 	}
 
+	
 }

@@ -36,24 +36,24 @@ public class AppointmentController {
 		return service.getAllAppointments();
 	}
 
-	@PutMapping("/updateAppointment/{id}")
-	public AppointmentDTO updateAppointment(@PathVariable Long id, @RequestBody Appointment appointment) {
-		return service.updateAppointment(id, appointment);
+	@PutMapping("/updateAppointment/{appointmentNo}")
+	public AppointmentDTO updateAppointment(@PathVariable Long appointmentNo, @RequestBody Appointment appointment) {
+		return service.updateAppointment(appointmentNo, appointment);
 	}
 	
-	@DeleteMapping("/deleteAppointment/{id}")
-	public boolean deleteAppointment(@PathVariable Long id) {
-		return service.deleteAppointment(id);
+	@DeleteMapping("/deleteAppointment/{appointmentNo}")
+	public boolean deleteAppointment(@PathVariable Long appointmentNo) {
+		return service.deleteAppointment(appointmentNo);
 	}
 	
 	@GetMapping("/appointmentById")
-	public AppointmentDTO readAppointmentById(@PathParam("id") Long id) {
-		return service.readById(id);
+	public AppointmentDTO readAppointmentById(@PathParam("appointmentNo") Long appointmentNo) {
+		return service.readById(appointmentNo);
 	}
 	
 	@GetMapping("/appointmentByName")
-	public List<AppointmentDTO> readAppointmentByName(@PathParam("name") String name) {
-		return service.readByName(name);
+	public List<AppointmentDTO> readAppointmentByName(@PathParam("name") String doctorName) {
+		return service.readByName(doctorName);
 	}
 
 	

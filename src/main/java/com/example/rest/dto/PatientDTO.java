@@ -15,13 +15,12 @@ public class PatientDTO {
 	private String patientName;
 	private String patientDateOfBirth;
 	private Integer patientAge;
-	private Integer patientPhone;
+	private Long patientPhone;
 	private String patientEmail;
 	private String patientAddress;
 	private List<Appointment> appointments = new ArrayList<>();
-	
 	public PatientDTO(Long appointmentNo, Long nhsNo, String patientName, String patientDateOfBirth, Integer patientAge,
-			Integer patientPhone, String patientEmail, String patientAddress, List<Appointment> appointments) {
+			Long patientPhone, String patientEmail, String patientAddress, List<Appointment> appointments) {
 		super();
 		this.appointmentNo = appointmentNo;
 		this.nhsNo = nhsNo;
@@ -37,7 +36,6 @@ public class PatientDTO {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
 	@Override
 	public String toString() {
 		return "PatientDTO [appointmentNo=" + appointmentNo + ", nhsNo=" + nhsNo + ", patientName=" + patientName
@@ -75,10 +73,10 @@ public class PatientDTO {
 	public void setPatientAge(Integer patientAge) {
 		this.patientAge = patientAge;
 	}
-	public Integer getPatientPhone() {
+	public Long getPatientPhone() {
 		return patientPhone;
 	}
-	public void setPatientPhone(Integer patientPhone) {
+	public void setPatientPhone(Long patientPhone) {
 		this.patientPhone = patientPhone;
 	}
 	public String getPatientEmail() {
@@ -99,6 +97,5 @@ public class PatientDTO {
 	public void setAppointments(List<Appointment> appointments) {
 		this.appointments = appointments;
 	}
-	
 	
 }
