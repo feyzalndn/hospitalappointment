@@ -36,25 +36,31 @@ As you can see the tables can be linked together through the Appointment Number.
 <img width="600" src=“img/CreatePatient.png">
 
 #### READ: Getting all the patients:		  
-                                            
+<br>
 <img width="600" src=“img/ReadPatient.png">
 
 #### UPDATE: Updating patient:
+<br>
 <img width="600" src=“img/UpdatePatient.png">
 
 #### DELETE: Deleting patient:
+<br>
 <img width="600" src=“img/DeleteAppointment.png">
 
 #### CREATE: Adding Appointment:
+<br>
 <img width="600" src=“img/CreateAppointment.png">
 
 #### READ: Getting all the appointments:
+<br>
 <img width="600" src=“img/ReadAppointments.png">
 
 #### UPDATE: Updating appointment:
+<br>
 <img width="600" src=“img/UpdateAppointment.png">
 
 #### DELETE: Deleting appointment:
+<br>
 <img width="600" src=“img/DeleteAppointment.png">
 
 ## Executing on Spring Boot
@@ -68,7 +74,10 @@ After this, you can run the CRUD operations using something like Postman as show
 ## Testing
 As you can see on the picture below, different types of tests were carried out on the functionality of the system and were pass.
 These were done using Mockito and JUnit testing.
+<br>
 <img width="600" src=“img/Test1.png">
+                                    
+<br>
 <img width="600" src=“img/Test2.png">
 
 
