@@ -24,11 +24,7 @@ This README provides an overview of its functionality as well as instructions on
  
  ## Project Structure:
 Here is an outline of the project structure:
-
-<p align="center">
-	<img src=“img/structure.png">
-</p>
-
+<img src="img/structure.png">
 ## Database:
 Below is an ERD diagram for the database tables:
 
