@@ -22,62 +22,46 @@ This README provides an overview of its functionality as well as instructions on
  
  ## Project Structure:
 Here is an outline of the project structure:
-<img src="img/structure.png">
+<img width="600" src="img/structure.png">
 ## Database:
 Below is an ERD diagram for the database tables:
 
-<img width="400" src="img/ERD.png">
+<img width="600" src="img/ERD.png">
 As you can see the tables can be linked together through the Appointment Number.
 
 ## Execution using Postman - CRUD:
 
 #### CREATE: Adding Patient:
 
-<p align="center">
-	<img src=“img/CreatePatient.png" width="400">
-</p>
+<img width="600" src=“img/CreatePatient.png">
 
 #### READ: Getting all the patients:
-
-<p align="center">
-	<img src=“img/ReadPatient.png" width="800">
-</p>
+					    
+<img src=“img/ReadPatient.png" width="800">
 
 #### UPDATE: Updating patient:
 
-<p align="center">
-	<img src=“img/UpdatePatient.png" width="800">
-</p>
+<img src=“img/UpdatePatient.png" width="800">
 
 #### DELETE: Deleting patient:
 
-<p align="center">
-	<img src=“img/DeleteAppointment.png" width="800">
-</p>
+<img src=“img/DeleteAppointment.png" width="800">
 
 #### CREATE: Adding Appointment:
 
-<p align="center">
-	<img src=“img/CreateAppointment.png" width="800">
-</p>
+<img src=“img/CreateAppointment.png" width="800">
 
 #### READ: Getting all the appointments:
 
-<p align="center">
-	<img src=“img/ReadAppointments.png" width="800">
-</p>
+<img src=“img/ReadAppointments.png" width="800">
 
 #### UPDATE: Updating appointment:
 
-<p align="center">
-	<img src=“img/UpdateAppointment.png" width="800">
-</p>
+<img src=“img/UpdateAppointment.png" width="800">
 
 #### DELETE: Deleting appointment:
 
-<p align="center">
-	<img src=“img/DeleteAppointment.png">
-</p>
+<img src=“img/DeleteAppointment.png">
 
 ## Executing on Spring Boot:
 Since this is a Spring Boot application it uses a TomCat server.
@@ -91,13 +75,10 @@ After this, you can run the CRUD operations using something like Postman as show
 As you can see on the picture below, different types of tests were carried out on the functionality of the system and were pass.
 These were done using Mockito and JUnit testing.
 
-<p align="center">
-	<img src=“img/Test1.png" width="800">
-</p>
+<img src=“img/Test1.png" width="800">
 
-<p align="center">
-	<img src=“img/Test2.png" width="800">
-</p>
+<img src=“img/Test2.png" width="800">
+
 
 ## What I learned from this project:
 In this project, I learned how to use various Java and Spring Boot
