@@ -31,13 +31,13 @@ As you can see the tables can be linked together through the Appointment Number.
 
 ## Execution using Postman - CRUD:
 
-#### CREATE: Adding Patient:
+CREATE: Adding Patient:
 <img width="600" src=“img/CreatePatient.png">
 
-#### READ: Getting all the patients:		    
+READ: Getting all the patients:		    
 <img width="600" src=“img/ReadPatient.png">
 
-#### UPDATE: Updating patient:
+UPDATE: Updating patient:
 <img width="600" src=“img/UpdatePatient.png">
 
 #### DELETE: Deleting patient:
