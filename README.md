@@ -21,7 +21,7 @@ This README provides an overview of its functionality as well as instructions on
 * View appointment by doctor name
  
  ## Project Structure:
-Here is an outline of the project structure:
+
 <img width="600" src="img/structure.png">
 ## Database:
 Below is an ERD diagram for the database tables:
@@ -32,28 +32,28 @@ As you can see the tables can be linked together through the Appointment Number.
 ## Execution using Postman - CRUD:
 
 #### CREATE: Adding Patient:
-<img src=“img/CreatePatient.png">
+<img width="600" src=“img/CreatePatient.png">
 
 #### READ: Getting all the patients:		    
-<img src=“img/ReadPatient.png">
+<img width="600" src=“img/ReadPatient.png">
 
 #### UPDATE: Updating patient:
-<img src=“img/UpdatePatient.png">
+<img width="600" src=“img/UpdatePatient.png">
 
 #### DELETE: Deleting patient:
-<img src=“img/DeleteAppointment.png">
+<img width="600" src=“img/DeleteAppointment.png">
 
 #### CREATE: Adding Appointment:
-<img src=“img/CreateAppointment.png">
+<img width="600" src=“img/CreateAppointment.png">
 
 #### READ: Getting all the appointments:
-<img src=“img/ReadAppointments.png">
+<img width="600" src=“img/ReadAppointments.png">
 
 #### UPDATE: Updating appointment:
-<img src=“img/UpdateAppointment.png">
+<img width="600" src=“img/UpdateAppointment.png">
 
 #### DELETE: Deleting appointment:
-<img src=“img/DeleteAppointment.png">
+<img width="600" src=“img/DeleteAppointment.png">
 
 ## Executing on Spring Boot:
 Since this is a Spring Boot application it uses a TomCat server.
@@ -66,10 +66,8 @@ After this, you can run the CRUD operations using something like Postman as show
 ## Testing:
 As you can see on the picture below, different types of tests were carried out on the functionality of the system and were pass.
 These were done using Mockito and JUnit testing.
-<br>
-<img src=“img/Test1.png">
-<br>
-<img src=“img/Test2.png">
+<img width="600" src=“img/Test1.png">
+<img width="600" src=“img/Test2.png">
 
 
 ## What I learned from this project:
