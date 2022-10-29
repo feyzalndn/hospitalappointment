@@ -23,6 +23,7 @@ This README provides an overview of its functionality as well as instructions on
  ## Project Structure
 
 <img width="600" src="img/structure.png">
+
 ## Database:
 Below is an ERD diagram for the database tables:
 
