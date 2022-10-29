@@ -26,7 +26,7 @@ This README provides an overview of its functionality as well as instructions on
 Here is an outline of the project structure:
 
 <p align="center">
-	<img src=“img/structure.png" width="400">
+	<img src=“img/structure.png">
 </p>
 
 ## Database:
@@ -84,7 +84,7 @@ As you can see the tables can be linked together through the Appointment Number.
 #### DELETE: Deleting an appointment:
 
 <p align="center">
-	<img src=“img/DeleteAppointment.png" width="800">
+	<img src=“img/DeleteAppointment.png">
 </p>
 
 ## Executing on Spring Boot:
