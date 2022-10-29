@@ -46,18 +46,19 @@ As you can see the tables can be linked together through the Appointment Number.
 	<img src=“img/CreatePatient.png" width="400">
 </p>
 
-#### READ: Getting all the patients' information:
+#### READ: Getting all the patients:
 
 <p align="center">
 	<img src=“img/ReadPatient.png" width="800">
 </p>
-#### UPDATE: Updating a patient's information:
+
+#### UPDATE: Updating patient:
 
 <p align="center">
 	<img src=“img/UpdatePatient.png" width="800">
 </p>
 
-#### DELETE: Deleting a patient's information:
+#### DELETE: Deleting patient:
 
 <p align="center">
 	<img src=“img/DeleteAppointment.png" width="800">
@@ -69,19 +70,19 @@ As you can see the tables can be linked together through the Appointment Number.
 	<img src=“img/CreateAppointment.png" width="800">
 </p>
 
-#### READ: Getting all the appointment information:
+#### READ: Getting all the appointments:
 
 <p align="center">
 	<img src=“img/ReadAppointments.png" width="800">
 </p>
 
-#### UPDATE: Updating an appointment:
+#### UPDATE: Updating appointment:
 
 <p align="center">
 	<img src=“img/UpdateAppointment.png" width="800">
 </p>
 
-#### DELETE: Deleting an appointment:
+#### DELETE: Deleting appointment:
 
 <p align="center">
 	<img src=“img/DeleteAppointment.png">
