@@ -32,35 +32,27 @@ As you can see the tables can be linked together through the Appointment Number.
 ## Execution using Postman - CRUD:
 
 #### CREATE: Adding Patient:
-<br>
 <img src=“img/CreatePatient.png">
 
-#### READ: Getting all the patients:
-<br>					    
+#### READ: Getting all the patients:		    
 <img src=“img/ReadPatient.png">
 
 #### UPDATE: Updating patient:
-<br>
 <img src=“img/UpdatePatient.png">
 
 #### DELETE: Deleting patient:
-<br>
 <img src=“img/DeleteAppointment.png">
 
 #### CREATE: Adding Appointment:
-<br>
 <img src=“img/CreateAppointment.png">
 
 #### READ: Getting all the appointments:
-<br>
 <img src=“img/ReadAppointments.png">
 
 #### UPDATE: Updating appointment:
-<br>
 <img src=“img/UpdateAppointment.png">
 
 #### DELETE: Deleting appointment:
-<br>
 <img src=“img/DeleteAppointment.png">
 
 ## Executing on Spring Boot:
