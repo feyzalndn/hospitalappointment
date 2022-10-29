@@ -33,7 +33,7 @@ As you can see the tables can be linked together through the Appointment Number.
 
 #### CREATE: Adding Patient:
 <br>
-<img width="600" src=“img/CreatePatient.png">
+<img src=“img/CreatePatient.png">
 
 #### READ: Getting all the patients:		  
 <br>
