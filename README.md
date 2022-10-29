@@ -22,7 +22,7 @@ This README provides an overview of its functionality as well as instructions on
  
  ## Project Structure
 
-<img width="600" src="img/structure.png">
+<img width="400" src="img/structure.png">
 
 ## Database:
 Below is an ERD diagram for the database tables:
@@ -36,34 +36,49 @@ As you can see the tables can be linked together through the Appointment Number.
 <p align="center">
 	        <img src="img/CreatePatient.png" width="600">
 </p> 
-#### READ: Getting all the patients:		 
+
+#### READ: Getting all the patients:
+
 <p align="center">
 	        <img src="img/ReadPatient.png" width="600">
 </p> 
+
 #### UPDATE: Updating patient:
+
 <p align="center">
 	        <img src="img/UpdatePatient.png" width="600">
 </p> 
+
 #### DELETE: Deleting patient:
+
 <p align="center">
 	        <img src="img/DeleteAppointment.png" width="600">
 </p> 
+
 #### CREATE: Adding Appointment:
+
 <p align="center">
 	        <img src="img/CreateAppointment.png" width="600">
 </p>
+
 #### READ: Getting all the appointments:
+
 <p align="center">
 	        <img src="img/ReadAppointments.png" width="600">
 </p>
+
 #### UPDATE: Updating appointment:
+
 <p align="center">
 	        <img src="img/UpdateAppointment.png" width="600">
 </p>
+
 #### DELETE: Deleting appointment:
+
 <p align="center">
 	        <img src="img/DeleteAppointment.png" width="600">
 </p>
+
 ## Executing on Spring Boot
 Since this is a Spring Boot application it uses a TomCat server.
 The port number used is 8080, so make sure that port remains free.
