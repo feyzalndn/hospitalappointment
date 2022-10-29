@@ -33,31 +33,31 @@ As you can see the tables can be linked together through the Appointment Number.
 
 #### CREATE: Adding Patient:
 
-<img width="600" src=“img/CreatePatient.png">
+<img src=“img/CreatePatient.png">
 
 #### READ: Getting all the patients:
 					    
-<img src=“img/ReadPatient.png" width="800">
+<img src=“img/ReadPatient.png">
 
 #### UPDATE: Updating patient:
 
-<img src=“img/UpdatePatient.png" width="800">
+<img src=“img/UpdatePatient.png">
 
 #### DELETE: Deleting patient:
 
-<img src=“img/DeleteAppointment.png" width="800">
+<img src=“img/DeleteAppointment.png">
 
 #### CREATE: Adding Appointment:
 
-<img src=“img/CreateAppointment.png" width="800">
+<img src=“img/CreateAppointment.png">
 
 #### READ: Getting all the appointments:
 
-<img src=“img/ReadAppointments.png" width="800">
+<img src=“img/ReadAppointments.png">
 
 #### UPDATE: Updating appointment:
 
-<img src=“img/UpdateAppointment.png" width="800">
+<img src=“img/UpdateAppointment.png">
 
 #### DELETE: Deleting appointment:
 
@@ -75,9 +75,9 @@ After this, you can run the CRUD operations using something like Postman as show
 As you can see on the picture below, different types of tests were carried out on the functionality of the system and were pass.
 These were done using Mockito and JUnit testing.
 
-<img src=“img/Test1.png" width="800">
+<img src=“img/Test1.png">
 
-<img src=“img/Test2.png" width="800">
+<img src=“img/Test2.png">
 
 
 ## What I learned from this project:
