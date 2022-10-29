@@ -20,7 +20,7 @@ This README provides an overview of its functionality as well as instructions on
 * View appointment by appointment number
 * View appointment by doctor name
  
- ## Project Structure:
+ ## Project Structure
 
 <img width="600" src="img/structure.png">
 ## Database:
@@ -29,15 +29,17 @@ Below is an ERD diagram for the database tables:
 <img width="600" src="img/ERD.png">
 As you can see the tables can be linked together through the Appointment Number.
 
-## Execution using Postman - CRUD:
+## Execution using Postman - CRUD
 
-CREATE: Adding Patient:
+#### CREATE: Adding Patient:
+<br>
 <img width="600" src=“img/CreatePatient.png">
 
-READ: Getting all the patients:		    
+#### READ: Getting all the patients:		  
+                                            
 <img width="600" src=“img/ReadPatient.png">
 
-UPDATE: Updating patient:
+#### UPDATE: Updating patient:
 <img width="600" src=“img/UpdatePatient.png">
 
 #### DELETE: Deleting patient:
@@ -55,7 +57,7 @@ UPDATE: Updating patient:
 #### DELETE: Deleting appointment:
 <img width="600" src=“img/DeleteAppointment.png">
 
-## Executing on Spring Boot:
+## Executing on Spring Boot
 Since this is a Spring Boot application it uses a TomCat server.
 The port number used is 8080, so make sure that port remains free.
 Once you have opened the project, you can right click and there are two ways to run it:
@@ -63,14 +65,14 @@ Run as Java Application,
 Run as Spring Boot App.
 After this, you can run the CRUD operations using something like Postman as shown above.
 
-## Testing:
+## Testing
 As you can see on the picture below, different types of tests were carried out on the functionality of the system and were pass.
 These were done using Mockito and JUnit testing.
 <img width="600" src=“img/Test1.png">
 <img width="600" src=“img/Test2.png">
 
 
-## What I learned from this project:
+## What I learned from this project
 In this project, I learned how to use various Java and Spring Boot
 functionalities including LOMBOK, Unit testing and being able to create a back-end API that can perform CRUD operations.
 It was quite challenging for me as I created my first software application.
