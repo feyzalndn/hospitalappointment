@@ -1,4 +1,4 @@
-# hospitalappointment
+# Hospital Appointment System
 ## Introduction
 This is an hospital appointment management back-end system, created using Java Spring Boot, that could be linked to a front-end to make API calls to an hospital database.
 It has various CRUD (Create, Read, Update, Delete) functionalities to maintain the system and keep it updated.
