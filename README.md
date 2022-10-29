@@ -33,37 +33,37 @@ As you can see the tables can be linked together through the Appointment Number.
 ## Execution using Postman - CRUD
 
 #### CREATE: Adding Patient:
-<br>
-<img src=“img/CreatePatient.png">
-
-#### READ: Getting all the patients:		  
-<br>
-<img width="600" src=“img/ReadPatient.png">
-
+<p align="center">
+	        <img src="img/CreatePatient.png" width="600">
+</p> 
+#### READ: Getting all the patients:		 
+<p align="center">
+	        <img src="img/ReadPatient.png" width="600">
+</p> 
 #### UPDATE: Updating patient:
-<br>
-<img width="600" src=“img/UpdatePatient.png">
-
+<p align="center">
+	        <img src="img/UpdatePatient.png" width="600">
+</p> 
 #### DELETE: Deleting patient:
-<br>
-<img width="600" src=“img/DeleteAppointment.png">
-
+<p align="center">
+	        <img src="img/DeleteAppointment.png" width="600">
+</p> 
 #### CREATE: Adding Appointment:
-<br>
-<img width="600" src=“img/CreateAppointment.png">
-
+<p align="center">
+	        <img src="img/CreateAppointment.png" width="600">
+</p>
 #### READ: Getting all the appointments:
-<br>
-<img width="600" src=“img/ReadAppointments.png">
-
+<p align="center">
+	        <img src="img/ReadAppointments.png" width="600">
+</p>
 #### UPDATE: Updating appointment:
-<br>
-<img width="600" src=“img/UpdateAppointment.png">
-
+<p align="center">
+	        <img src="img/UpdateAppointment.png" width="600">
+</p>
 #### DELETE: Deleting appointment:
-<br>
-<img width="600" src=“img/DeleteAppointment.png">
-
+<p align="center">
+	        <img src="img/DeleteAppointment.png" width="600">
+</p>
 ## Executing on Spring Boot
 Since this is a Spring Boot application it uses a TomCat server.
 The port number used is 8080, so make sure that port remains free.
@@ -76,12 +76,12 @@ After this, you can run the CRUD operations using something like Postman as show
 As you can see on the picture below, different types of tests were carried out on the functionality of the system and were pass.
 These were done using Mockito and JUnit testing.
 
-<br>
-<img width="600" src=“img/Test1.png">
-                                    
-<br>
-<img width="600" src=“img/Test2.png">
-
+<p align="center">
+	        <img src="img/Test1.png" width="600">
+</p>
+<p align="center">
+	        <img src="img/Test2.png" width="600">
+</p>
 
 ## What I learned from this project
 In this project, I learned how to use various Java and Spring Boot
