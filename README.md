@@ -6,21 +6,19 @@ It is split into two tables. A table for patients and a table for appointments.�
 This system is designed for companies to make it more convenient for them to store, update and maintain appointment data as well as patient data.
 This README provides an overview of its functionality as well as instructions on how to run it using Spring Boot.
 
-## Features:
+## Features
 * Add patient
-* View all patients,
-* Update patients,
-* Delete patient by appointment no,
-* View patient by appointment no,
-* View patient by patient name.
- 
-## Appointments:
- * Add appointments,
- * View all appointments,
- * Update appointment,
- * Delete appointment,
- * View appointment by appointment number,
- * View appointment by doctor name.
+* View all patients
+* Update patients
+* Delete patient by appointment no
+* View patient by appointment no
+* View patient by patient name
+* Add appointments
+* View all appointments
+* Update appointment
+* Delete appointment
+* View appointment by appointment number
+* View appointment by doctor name
  
  ## Project Structure:
 Here is an outline of the project structure:
@@ -28,10 +26,7 @@ Here is an outline of the project structure:
 ## Database:
 Below is an ERD diagram for the database tables:
 
-<p align="center">
-	<img src=“img/ERD.png" width="400">
-</p>
-
+<img width="400" src="img/ERD.png">
 As you can see the tables can be linked together through the Appointment Number.
 
 ## Execution using Postman - CRUD:
