@@ -74,6 +74,7 @@ After this, you can run the CRUD operations using something like Postman as show
 ## Testing
 As you can see on the picture below, different types of tests were carried out on the functionality of the system and were pass.
 These were done using Mockito and JUnit testing.
+
 <br>
 <img width="600" src=“img/Test1.png">
                                     
