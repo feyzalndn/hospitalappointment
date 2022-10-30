@@ -6,6 +6,15 @@ It is split into two tables. A table for patients and a table for appointments.Â
 This system is designed for companies to make it more convenient for them to store, update and maintain appointment data as well as patient data.
 This README provides an overview of its functionality as well as instructions on how to run it using Spring Boot.
 
+## Tools
+* Eclipse IDE
+* Java
+* Maven
+* Spring Boot
+* MySQL
+* Postman
+* GitHub
+
 ## Features
 * Add patient
 * View all patients
