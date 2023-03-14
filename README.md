@@ -103,9 +103,6 @@ These were done using Mockito and JUnit testing.
 <p align="center">
 	        <img src="img/Test1.png" width="600">
 </p>
-<p align="center">
-	        <img src="img/Test2.png" width="600">
-</p>
 
 ## What I learned from this project
 In this project, I learned how to use various Java and Spring Boot
